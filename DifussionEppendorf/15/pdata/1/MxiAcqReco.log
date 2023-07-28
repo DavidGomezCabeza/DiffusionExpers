@@ -1,0 +1,64 @@
+2023/07/25  11:35:53.942  [TRACE]   MrAcqSimulationPlugin: Plugin::init(): started
+2023/07/25  11:35:53.942  [TRACE]   MrAcqSimulationPlugin: SimulationServant_impl::SimulationServant_impl(): started/finished
+2023/07/25  11:35:53.942  [TRACE]   MrAcqSimulationPlugin: Plugin::init(): return true
+2023/07/25  11:35:53.943  [TRACE]   MrAcqSimulationPlugin: Plugin::afterStart(): started
+2023/07/25  11:35:53.943  [TRACE]   MrAcqSimulationPlugin: Plugin::afterStart(): return true
+2023/07/25  11:35:53.943  [INFO]    MxiAcqRecoPlugin: Plugin::init(): run 'gsauto -psMode 65 -prototypeMode 0 -adjName Receiver Gain -procnoPath /opt/nmrdata/PV-360.3.4/data/pciuser/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/15/pdata/1 -serverName MxiAcqReco_2.16.756.5.5.200.8323328.16536.1690277289.2523_82049_596384052_65 -logSeverityLevel SL_INFO ')
+2023/07/25  11:35:54.104  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': pulse program in compilation
+2023/07/25  11:35:55.588  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': loading TRX2
+2023/07/25  11:35:55.609  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': prepare Gradients for Gradient Controller
+2023/07/25  11:35:55.795  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': Loading AQS Rack
+2023/07/25  11:35:55.797  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': Load GTU and TRX
+2023/07/25  11:35:55.913  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': Start GTU and TRX
+2023/07/25  11:35:55.969  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': automatic adjustment in progress
+2023/07/25  11:35:56.133  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': acquisition started
+2023/07/25  11:35:57.042  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Sendgui': statusparsmodified
+2023/07/25  11:35:57.196  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': acquisition  finished 
+2023/07/25  11:35:57.198  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 0. Message kind 'TerminateNormal': 
+2023/07/25  11:35:57.204  [INFO]    MxiAcqRecoPlugin: Plugin::beforeStop(): finished
+2023/07/25  11:35:57.207  [TRACE]   MrAcqSimulationPlugin: Plugin::beforeStop(): started
+2023/07/25  11:35:57.207  [TRACE]   MrAcqSimulationPlugin: Plugin::beforeStop(): return true
+2023/07/25  11:35:57.208  [TRACE]   MrAcqSimulationPlugin: SimulationServant_impl::~SimulationServant_impl(): started/finished
+2023/07/25  11:35:57.710  [TRACE]   MrAcqSimulationPlugin: Plugin::init(): started
+2023/07/25  11:35:57.710  [TRACE]   MrAcqSimulationPlugin: SimulationServant_impl::SimulationServant_impl(): started/finished
+2023/07/25  11:35:57.710  [TRACE]   MrAcqSimulationPlugin: Plugin::init(): return true
+2023/07/25  11:35:57.711  [TRACE]   MrAcqSimulationPlugin: Plugin::afterStart(): started
+2023/07/25  11:35:57.711  [TRACE]   MrAcqSimulationPlugin: Plugin::afterStart(): return true
+2023/07/25  11:35:57.711  [INFO]    MxiAcqRecoPlugin: Plugin::init(): run 'gop -psMode 65 -prototypeMode 0 -procnoPath /opt/nmrdata/PV-360.3.4/data/pciuser/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/15/pdata/1 -serverName MxiAcqReco_2.16.756.5.5.200.8323328.16536.1690277289.2523_82049_596384052_65 -logSeverityLevel SL_INFO ')
+2023/07/25  11:35:57.915  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': pulse program in compilation
+2023/07/25  11:35:59.225  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': loading TRX2
+2023/07/25  11:35:59.245  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': prepare Gradients for Gradient Controller
+2023/07/25  11:35:59.455  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': Loading AQS Rack
+2023/07/25  11:35:59.456  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': Load GTU and TRX
+2023/07/25  11:35:59.573  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': Start GTU and TRX
+2023/07/25  11:35:59.628  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': acquisition in progress
+2023/07/25  11:35:59.809  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': acquisition started
+2023/07/25  11:36:09.810  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:36:19.811  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:36:29.812  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:36:39.813  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:36:49.814  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:36:59.815  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:37:09.815  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:37:19.816  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:37:29.817  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:37:39.818  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:37:49.819  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:37:59.820  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:38:09.821  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:38:19.822  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:38:29.822  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:38:39.823  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:38:49.824  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:38:59.825  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:39:09.826  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:39:19.827  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:39:29.828  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:39:39.829  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  11:39:48.473  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Sendgui': statusparsmodified
+2023/07/25  11:39:48.622  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': acquisition  finished 
+2023/07/25  11:39:48.629  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 0. Message kind 'TerminateNormal': 
+2023/07/25  11:39:48.643  [INFO]    MxiAcqRecoPlugin: Plugin::beforeStop(): finished
+2023/07/25  11:39:48.646  [TRACE]   MrAcqSimulationPlugin: Plugin::beforeStop(): started
+2023/07/25  11:39:48.646  [TRACE]   MrAcqSimulationPlugin: Plugin::beforeStop(): return true
+2023/07/25  11:39:48.647  [TRACE]   MrAcqSimulationPlugin: SimulationServant_impl::~SimulationServant_impl(): started/finished

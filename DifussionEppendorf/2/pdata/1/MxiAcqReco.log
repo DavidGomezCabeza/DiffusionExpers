@@ -1,0 +1,26 @@
+2023/07/25  10:22:51.824  [TRACE]   MrAcqSimulationPlugin: Plugin::init(): started
+2023/07/25  10:22:51.824  [TRACE]   MrAcqSimulationPlugin: SimulationServant_impl::SimulationServant_impl(): started/finished
+2023/07/25  10:22:51.824  [TRACE]   MrAcqSimulationPlugin: Plugin::init(): return true
+2023/07/25  10:22:51.824  [TRACE]   MrAcqSimulationPlugin: Plugin::afterStart(): started
+2023/07/25  10:22:51.824  [TRACE]   MrAcqSimulationPlugin: Plugin::afterStart(): return true
+2023/07/25  10:22:51.824  [INFO]    MxiAcqRecoPlugin: Plugin::init(): run 'gsauto -psMode 65 -prototypeMode 0 -adjName Reference Power -procnoPath /opt/nmrdata/PV-360.3.4/data/pciuser/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/2/pdata/1 -serverName MxiAcqReco_2.16.756.5.5.200.8323328.16536.1690273369.1667_82049_596378152_65 -logSeverityLevel SL_INFO ')
+2023/07/25  10:22:51.953  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': pulse program in compilation
+2023/07/25  10:22:52.345  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': loading TRX2
+2023/07/25  10:22:52.364  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': prepare Gradients for Gradient Controller
+2023/07/25  10:22:52.565  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': Loading AQS Rack
+2023/07/25  10:22:52.567  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': Load GTU and TRX
+2023/07/25  10:22:52.691  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': Start GTU and TRX
+2023/07/25  10:22:52.746  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': automatic adjustment in progress
+2023/07/25  10:22:52.905  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': acquisition started
+2023/07/25  10:23:02.905  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  10:23:12.906  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  10:23:22.907  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Empty': 
+2023/07/25  10:23:25.142  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Sendgui': statusparsmodified
+2023/07/25  10:23:25.305  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 1. Message kind 'Show_status': acquisition  finished 
+2023/07/25  10:23:25.308  [INFO]    MxiAcqRecoPlugin: AcqClient::getMessageCorba(): return 0. Message kind 'TerminateNormal': 
+2023/07/25  10:23:25.318  [ERROR]   MxiAcqRecoPlugin: Manager::waitForFinish(): shouldRunThread: The adjustment 'Reference Power' did not converge.
+2023/07/25  10:23:25.319  [INFO]    MxiAcqRecoPlugin: Plugin::beforeStop(): finished
+2023/07/25  10:23:25.319  [ERROR]   MxiAcqReco_2.16.756.5.5.200.8323328.16536.1690273369.1667_82049_596378152_65: Error in beforeStop() callback for plugin "MxiAcqRecoPlugin"
+2023/07/25  10:23:25.322  [TRACE]   MrAcqSimulationPlugin: Plugin::beforeStop(): started
+2023/07/25  10:23:25.322  [TRACE]   MrAcqSimulationPlugin: Plugin::beforeStop(): return true
+2023/07/25  10:23:25.323  [TRACE]   MrAcqSimulationPlugin: SimulationServant_impl::~SimulationServant_impl(): started/finished

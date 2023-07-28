@@ -1,0 +1,293 @@
+# 1 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+;****************************************************************
+;
+; Copyright (c) 2016
+; Bruker BioSpin MRI GmbH
+; D-76275 Ettlingen, Germany
+;
+; All Rights Reserved
+; 
+;
+;****************************************************************
+;
+; d0 - TR padding
+; d8 - 1 us
+
+
+# 1 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include" 1
+;****************************************************************
+;
+; Copyright (c) 2018-2021
+; Bruker BioSpin MRI GmbH
+; D-76275 Ettlingen, Germany
+;
+; All Rights Reserved
+;
+;****************************************************************
+# 1 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Avance.incl" 1
+;Avance4.incl
+;   for AV 4
+;
+;avance-version (16/08/18)
+;
+;$CLASS=Common Incl
+;$COMMENT=
+
+
+# 19 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Avance.incl"
+;setrtp0 denotes TimingController
+
+
+# 50 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Avance.incl"
+# 51 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Avance.incl"
+
+
+# 63 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Avance.incl"
+# 89 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Avance.incl"
+# 90 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Avance.incl"
+
+
+# 123 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Avance.incl"
+;#define LOWQ
+;#define HIGHQ
+
+
+;#define MIX_UP
+;#define MIX_DOWN
+# 136 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Avance.incl"
+;$Id:$
+# 15 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include" 2
+
+
+define delay adcEndInfoTagDel
+define delay rde1
+# 20 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include"
+"rde1=de-de1"
+
+
+; Remark:  is the string concatenation mode for cpp with traditional option
+# 27 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include"
+	
+
+
+	
+subroutine InitGradients
+subroutine InitDevices_NoGradients
+subroutine InitDevices
+subroutine UpdateDynPars_30s
+subroutine SetupGoTo
+subroutine AdcEnd_InfoTag
+# 16 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg" 2
+
+# 1 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Trigger.mod" 1
+;****************************************************************
+;
+; Copyright (c) 2018
+; Bruker BioSpin MRI GmbH
+; D-76275 Ettlingen, Germany
+;
+; All Rights Reserved
+;
+; Trigger.mod - Trigger Module
+;
+;****************************************************************
+
+if (PVM_TriggerModule == On)
+{
+  define delay trigDur = {$PVM_TriggerDur}
+  define delay trigDel = {$PVM_TriggerDelay}
+# 18 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Trigger.mod"
+  ; convert from ms to s
+  "trigDur = trigDur / 1000"
+  "trigDel = trigDel / 1000"
+}
+
+subroutine Trigger
+
+subroutine TriggerPhase
+subroutine TriggerSlice
+# 17 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg" 2
+
+define list<frequency> freqTx = { $ExcFqlist }
+define list<frequency> freqRx = { $RecFqlist }
+
+# 22 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+define delay dur2
+"dur2=d2-de"
+
+define delay dur4
+"dur4 = d4-de"
+
+define loopcounter lds={$PVM_DummyScans}
+# 30 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+define pulse refp
+"refp = 2*p0" 
+
+define loopcounter lbase={$NFaBasel}
+
+define loopcounter lheat={$HeatLoopCnt}
+"lheat = lheat / 128"
+# 38 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+define delay hgd0={$HGD[0]}
+define delay hgd1={$HGD[1]}
+define delay hgd2={$HGD[2]}
+define delay hgd3={$HGD[3]}
+define delay dramp
+define list<grad_vector> HeatGradVec = {$HeatGradVec}
+"dramp = 2*hgd3"
+
+
+subroutine HeatBipolarGrad
+subr InitDevices
+;EXEC_begin InitDevices InitDevices()
+# 75 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include"
+ 
+    
+;EXEC_begin InitGradients InitGradients()
+# 60 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include"
+ 
+    define list <grad_index> xyzb0 = {0 1 2 3}
+    1m sync_grad 100
+    10u ctrlgrad 0  
+    1m shim_off  
+ 
+;EXEC_end   InitGradients
+# 77 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include"
+    
+;EXEC_begin InitDevices_NoGradients InitDevices_NoGradients()
+# 69 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include"
+ 
+    2u h2pulse       ;SEL_2H plus interleave_incr
+ 
+;EXEC_end   InitDevices_NoGradients
+# 78 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include"
+ 
+;EXEC_end   InitDevices
+# 71 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+# 72 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+         0u     rpp0
+         0u     freqTx.res 
+         0u     freqRx.res
+
+start,   0u
+stna,    0u
+stnr,    0u
+
+   if(DynFaMeasMode==DynamicFA)
+   {
+     if "lbase > 0" goto stbase
+            subr HeatBipolarGrad
+;EXEC_begin HeatBipolarGrad HeatBipolarGrad()
+# 48 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+ 
+   if(ACQ_scan_type == Scan_Experiment)
+   {
+    if(HeatGradYN==Yes)
+    {
+
+    heatlab0, hgd0
+
+       hgd1     grad_ramp<hgd3,  magnet_coord> {  HeatGradAmp*HeatGradVec[] }
+       hgd2     grad_ramp<dramp, magnet_coord> { -HeatGradAmp*HeatGradVec[] }
+       hgd3     grad_off
+
+    lo to heatlab0 times 128
+         2m
+
+    lo to heatlab0 times lheat
+    }
+   }
+ 
+;EXEC_end   HeatBipolarGrad
+# 85 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+# 85 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+   }
+
+stbase,  subr UpdateDynPars_30s
+;EXEC_begin UpdateDynPars_30s UpdateDynPars_30s()
+# 82 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include"
+ 
+    29.8u switch_realtime_tables
+     0.1u update_interactive_parameters
+     0.1u blockrequest
+ 
+;EXEC_end   UpdateDynPars_30s
+# 88 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+subr Trigger
+;EXEC_begin Trigger Trigger()
+# 24 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/Trigger.mod"
+ 
+  if (PVM_TriggerModule == On)
+  {
+    trigDur     trignl1
+    trigDel
+  }
+ 
+;EXEC_end   Trigger
+# 89 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+         10u      freqRx(receive):f1
+         d6      grad_ramp {0,0,SliceGrad}  freqTx:f1
+         d8      
+
+        (p0:sp0  ph0):f1
+# 95 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+         d1                         ; TE1/2 fill
+         d8
+
+      (refp:sp0  ph3):f1
+
+      dur2                          ; SE TE2/2 fill
+                 (rde1 de1 adc_job0   ph1 syrec_job0 ) (1u 1u   ph0:r):f_job0
+# 103 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+  aq_job0      dwgen_job0
+
+        d5
+       10u       eoscnpzbwrif_job0
+	d3                          ; TM fill
+	d8
+
+       (p0:sp0   ph0):f1
+# 112 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+      dur4    
+                 (rde1 de1 adc_job0   ph1 syrec_job0 ) (1u 1u   ph0:r):f_job0  
+  aq_job0      dwgen_job0
+	d5
+       10u       eoscnpzbwrif_job0
+	d0       grad_off
+
+	        "lds = lds - 1"	    ; this makes
+   if "lds>=0" goto stbase	    ; dummy scans 
+
+        0u	 ipp0
+# 124 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+     lo to stna times NA
+
+        0u	 rpp0
+
+subr SetupGoTo
+;EXEC_begin SetupGoTo SetupGoTo(any stbase)
+# 90 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/MRI.include"
+ 
+    if (ACQ_scan_type != Scan_Experiment)
+    {
+        goto stbase
+    }
+ 
+;EXEC_end   SetupGoTo
+# 129 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+# 131 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+   if(DynFaMeasMode==DynamicFA)
+   {
+       "lbase = lbase -1"
+   }
+
+     lo to stnr times NR
+
+exit
+# 140 "/root/.topspin-BladeEpu/local_acqu/tuneDirs/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/lists/pp/AdjRefPow.ppg"
+ph0 = 0 
+ph3 = 0
+ph1 = 0

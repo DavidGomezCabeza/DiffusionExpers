@@ -1,0 +1,29 @@
+##TITLE=Parameter List, ParaVision 360 V3.4
+##JCAMPDX=4.24
+##DATATYPE=Parameter Values
+##ORIGIN=Bruker BioSpin MRI GmbH
+##OWNER=pciuser
+$$ Write Options: Symbolic Enums
+$$ 2023-07-25 11:59:37.380 +0200  pciuser@czc1517b9t
+$$ /opt/nmrdata/PV-360.3.4/data/pciuser/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/21/AdjStatePerScan
+$$ process /opt/PV-360.3.4/prog/bin/parxserver
+##$AdjScanStateCompleted=No
+##$AdjScanStateAdjName=( 3, 128 )
+<ATS_Scan> <SHIM_Scan> <RCVR_Standard>
+##$AdjScanStateTime=( 3 )
+<2023-07-25T11:59:33,090+0200> <2023-07-25T11:59:33,598+0200> 
+<2023-07-25T11:59:35,125+0200>
+##$AdjScanStateExpno=( 3 )
+21 21 21
+##$AdjScanStateState=( 3 )
+adj_successful adj_successful adj_successful
+##$AdjScanStateResultId=( 3, 65 )
+<2.16.756.5.5.200.8323328.16536.1690279173.3184> 
+<2.16.756.5.5.200.8323328.16536.1690279173.3195> 
+<2.16.756.5.5.200.8323328.16536.1690279173.3208>
+##$AdjScanStateMethod=( 3, 128 )
+<Bruker:FLASH> <Bruker:AdjShim> <Bruker:FLASH>
+##$AdjScanStateModality=( 3 )
+MR_Modality MR_Modality MR_Modality
+##END=
+$$ File finished by PARX at 2023-07-25 11:59:37.381 +0200

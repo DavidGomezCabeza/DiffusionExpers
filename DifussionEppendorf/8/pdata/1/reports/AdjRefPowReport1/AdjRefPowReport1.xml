@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright (c) 2010-2014 Bruker BioSpin MRI GmbH. All Rights Reserved.
+$Id$
+Description: Report template for QA test XXXX.
+-->
+
+<article xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en">
+  <info>
+    <title>Reference Power Adjustment</title>
+        <subtitle>TX Coil: RF RES 128 1H/13C 103/040 L/L TR (BMRIDE T160788/0017)</subtitle>
+<publisher>
+    <publishername>Bruker BioSpin MRI GmbH</publishername>
+    <address>
+        <street>Rudolf-Plank-Str. 23</street>
+        <postcode>D-76275</postcode> 
+        <city>Ettlingen</city> 
+        <country>Germany</country>
+        <phone>+49 721 5161-6500</phone>
+        <email>mri@bruker.com</email>
+    </address>
+</publisher>
+<copyright>
+    <year>2018</year>
+    <holder>Bruker BioSpin MRI GmbH</holder>
+</copyright>
+<releaseinfo>ParaVision 360 V3.4</releaseinfo>
+  </info>
+
+
+  <section>
+    <title>Result Summary</title>
+    <para>Reference gain in use: </para>
+    <informaltable>
+      <tgroup cols="2">
+        <colspec colnum="1" colwidth="300" align="left"/>
+        <tbody>
+          <row>
+            <entry>PVM_StudyRefPow</entry>
+            <entry>0.161 W </entry>
+          </row>
+          <row>
+            <entry>Reference Power Status</entry>
+            <entry> Adj by Bruker:AdjRefPowADJ_REF_POW </entry>
+          </row>
+          <row>
+            <entry>Adjustment Status</entry>
+            <entry> Succeeded </entry>
+          </row>
+         </tbody>
+      </tgroup>
+    </informaltable>
+  </section>
+  <section>
+    <title>Acquisition Information</title>
+
+    <table>
+      <title>Protocol Parameters</title>
+      <tgroup cols="2">
+        <colspec colnum="1" colwidth="250" align="left"/>
+        <tbody>
+          <row>
+            <entry>Method</entry>
+            <entry>Bruker:AdjRefPow</entry>
+          </row>
+          <row>
+            <entry>Nucleus</entry>
+            <entry>1H</entry>
+          </row>
+           <row>
+            <entry>Excitation Pulse Length</entry>
+            <entry> 0.5 ms </entry>
+          </row>
+          <row>
+            <entry>Excitation Pulse Bandwidth</entry>
+            <entry> 2,560 ms </entry>
+          </row>
+          <row>
+            <entry>Excitation Pulse Shape</entry>
+            <entry> bp.exc </entry>
+          </row>
+          <row>
+            <entry> Derive Init. Power</entry>
+            <entry> false </entry>
+	  </row>
+	  <row>
+            <entry> Adjustment Precision</entry>
+            <entry> 0.3  dB </entry>         
+          </row>
+          <row>
+            <entry> Initial Power</entry>
+            <entry> 0.001  W </entry>
+          </row>
+          <row>
+            <entry> Max Power</entry>
+            <entry> 400  W </entry>
+          </row>
+          <row>
+            <entry> Calculated Shape </entry>
+              <entry> false  </entry>
+          </row>
+          <row>
+            <entry>Excitation Pulse Shape</entry>
+            <entry> bp.exc </entry>
+          </row>
+          <row>
+            <entry> Slice Thickness</entry>
+            <entry> 5  mm </entry>         
+          </row>
+          <row>
+            <entry> SliceOri</entry>
+            <entry> axial  </entry>         
+          </row>
+           <row>
+             <entry> Repetition Time </entry>
+             <entry> 1,000 ms </entry>         
+           </row>
+             <row>
+              <entry> Echo Time</entry>
+              <entry> 15  ms </entry>        
+             </row>
+             <row>
+              <entry> N Receive Channels </entry>
+              <entry> 1 </entry>        
+             </row>
+             <row>
+              <entry> Channel Combination</entry>
+              <entry> SumOfSquares  </entry>         
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table>
+      <title> Coil information</title>
+      <tgroup cols="2">
+        <colspec colnum="1" colwidth="250" align="left"/>
+        <tbody>
+            <row>
+              <entry> Coil configuration</entry>
+              <entry> RF RES 128 1H/13C 103/040 L/L TR (BMRIDE T160788/0017)  </entry>        
+          </row>
+             <row>
+               <entry> Operation Mode</entry>
+               <entry> 
+		 [1H] TX/RX Volume  
+		  
+	       </entry> 
+	     </row>
+             <row>
+              <entry> Active Tx Coil</entry>
+              <entry> 
+		1  
+	      </entry> 
+             </row>
+
+             <row>
+               <entry>  
+	        Tx Coil Element 1 active
+	       </entry>
+               <entry>
+		     true   
+	       </entry>
+             </row>
+          <row>
+            <entry> Active Rx Coil</entry>
+            <entry> 
+	      1   
+	    </entry>
+          </row>
+          <row>
+            <entry> Active Receivers</entry>
+            <entry> 
+	      1   
+	    </entry>
+          </row>
+             <row>
+               <entry>  
+	        Rx Coil Element 1 active
+	       </entry>
+               <entry>
+		     true   
+	       </entry>
+             </row>
+
+      </tbody>
+      </tgroup>
+    </table>
+    <para> Routing Information  </para>
+    <para> $Bis,1,20230404,2048,ROUTING,2#$Name,[1H] TX/RX Volume#$OpMode,1.0,D/A,2.16.756.5.5.200.8323328.51270.1680621873.17#$TxCoil,1.0,1,RF RES 128 1H/13C 103/040 L/L TR,BMRIDE,T160788,0017,1#$TxCoil,1.0,2,RF RES 128 1H/13C 103/040 L/L TR,BMRIDE,T160788,0017,2#$RxCoil,1.0,1,RF RES 128 1H/13C 103/040 L/L TR,BMRIDE,T160788,0017,1#$RxCoil,1.0,2,RF RES 128 1H/13C 103/040 L/L TR,BMRIDE,T160788,0017,2#$RfConn,1.0, Chan,1, Nuc,1H#$RfConn,1.0, Chan,1, TxSgu,2#$RfConn,1.0, TxSgu,2, Amp,2#$RfConn,1.0, Amp,2, TxPreamp,3#$RfConn,1.0, Chan,1, RxSgu,2#$RfConn,1.0, RxSgu,2, Rec,2#$RfConn,1.0, Rec,2, RxPreamp,3#$RfConn,1.0, Chan,2, Nuc,13C#$RfConn,1.0, Chan,2, TxSgu,1#$RfConn,1.0, TxSgu,1, Amp,1#$RfConn,1.0, Amp,1, TxPreamp,2#$RfConn,1.0, Chan,2, RxSgu,1#$RfConn,1.0, RxSgu,1, Rec,1#$RfConn,1.0, Rec,1, RxPreamp,2#$RfDevProp,1.0, Amp,1/2, HpMode,On#$RfDevProp,1.0, Amp,1, OutSwitchPos,1##$EndBis,DF,4C#  </para>
+  </section>
+  <section>
+    <title> Adjustment Progression </title>
+
+
+        <figure>
+            <title>
+                Spin Echo Phase Channel 1
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                               fileref="Figures/Figure_1.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure>
+            <title>
+                Pulse Power of Adjustment Pulse
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_2.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure>
+            <title>
+                Receiver Gain
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_3.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>        
+	<figure>
+            <title>
+                STE / SE ratio
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_4.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+  </section>
+  <section>
+    <title> Profiles </title>
+	<figure>
+            <title>
+                Spin Echo Sum Profile (real part)
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_5.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+	<figure>
+            <title>
+                Spin Echo Sum Profile (imag part)
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_6.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+	<figure>
+            <title>
+                Stimulated Echo Sum Profile (real part)
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_7.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+	<figure>
+            <title>
+                Stimulated Echo Sum Profile (imag part)
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_8.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+	<figure>
+            <title>
+                Spin Echo Profile (real part) channel 1
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_9.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+	<figure>
+            <title>
+                Spin Echo Profile (imag part) channel 1
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_10.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+	<figure>
+            <title>
+                Stimulated Echo Profile (real part) channel 1
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_11.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+	<figure>
+            <title>
+                Stimulated Echo Profile (imag part) channel 1
+            </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata align="center"
+                               width="5in"
+                               format="svg"
+                              fileref="Figures/Figure_12.svg"
+                        />
+                </imageobject>
+            </mediaobject>
+        </figure>
+ 
+  </section>
+</article>

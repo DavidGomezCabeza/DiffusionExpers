@@ -1,0 +1,20 @@
+##TITLE=Parameter List, ParaVision 360 V3.4
+##JCAMPDX=4.24
+##DATATYPE=Parameter Values
+##ORIGIN=Bruker BioSpin MRI GmbH
+##OWNER=pciuser
+$$ Write Options: Symbolic Enums, RLE encoded arrays, symbol visibility
+$$ 2023-07-25 11:55:35.168 +0200  pciuser@czc1517b9t
+$$ /opt/nmrdata/PV-360.3.4/data/pciuser/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/19/pdata/1/methreco
+$$ process /opt/PV-360.3.4/prog/bin/parxserver
+##$PVM_GradientLinearityCorrection=No
+##$RecoMethMode=Default
+##$WeightingMode=positive_mask
+##$MaskWeighting=4
+##$GaussBroadening=1
+##$PVM_AtsDataset=(<>, <>, 0, 0, <>, <>, <>)
+##$PVM_AtsDataSeries=( 1 )
+(0, 0)
+$$ @vis= MethodRecoGroup PVM_GradientLinearityCorrection RecoMethMode
+##END=
+$$ File finished by PARX at 2023-07-25 11:55:35.168 +0200

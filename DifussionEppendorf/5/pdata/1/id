@@ -1,0 +1,14 @@
+##TITLE=Parameter List, ParaVision 360 V3.4
+##JCAMPDX=4.24
+##DATATYPE=Parameter Values
+##ORIGIN=Bruker BioSpin MRI GmbH
+##OWNER=pciuser
+$$ Write Options: Symbolic Enums
+$$ 2023-07-25 10:32:26.327 +0200  pciuser@czc1517b9t
+$$ /opt/nmrdata/PV-360.3.4/data/pciuser/20230725_101641_Eppendorf_Difussion_scaffold_d2o_1_1/5/pdata/1/id
+$$ process /opt/PV-360.3.4/prog/bin/parxserver
+##$DATASET_KEY=( 65 )
+<2.16.756.5.5.200.8323328.16536.1690273946.1783>
+##$DATASET_Modality=MR_Modality
+##END=
+$$ File finished by PARX at 2023-07-25 10:32:26.327 +0200
